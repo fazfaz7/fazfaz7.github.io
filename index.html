@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Faz | iOS & AI Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AF</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#highlights" class="nav-link">Highlights</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Available for opportunities</div>
+            <h1 class="hero-name">Adrian Faz</h1>
+            <h2 class="hero-title">iOS & AI Developer</h2>
+            <p class="hero-tagline">Crafting intelligent mobile experiences</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="assets/images/profile.jpg" alt="Adrian Faz">
+                    </div>
+                    <div class="about-image-blur"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-label">About</h2>
+                    <h3 class="about-headline">Developer, creator, and eternal learner.</h3>
+                    <p>
+                        I'm passionate about building innovative mobile applications and exploring
+                        the possibilities of artificial intelligence. My journey has taken me through
+                        the Apple Developer Academy, multiple hackathon victories, and winning the
+                        Swift Student Challenge.
+                    </p>
+                    <p>
+                        I thrive at the intersection of iOS development and AI — creating apps that
+                        are not only beautiful and intuitive but also intelligent. Whether it's
+                        crafting pixel-perfect SwiftUI interfaces or integrating machine learning
+                        models, I love pushing boundaries.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">SSC</span>
+                            <span class="stat-label">Winner 2024 (By Apple)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="section highlights">
+        <div class="container">
+            <h2 class="section-label center">Highlights</h2>
+            <p class="section-subtitle">Moments from my journey</p>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide">
+                            <div class="photo-stack">
+                                <div class="photo" style="--rotation: -5deg;">
+                                    <img src="assets/images/highlight1.jpg" alt="Moment 1">
+                                </div>
+                                <div class="photo" style="--rotation: 3deg;">
+                                    <img src="assets/images/highlight2.jpg" alt="Moment 2">
+                                </div>
+                                <div class="photo" style="--rotation: -4deg;">
+                                    <img src="assets/images/highlight3.jpg" alt="Moment 3">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <div class="photo-stack">
+                                <div class="photo" style="--rotation: 4deg;">
+                                    <img src="assets/images/highlight4.jpg" alt="Moment 4">
+                                </div>
+                                <div class="photo" style="--rotation: -3deg;">
+                                    <img src="assets/images/highlight5.jpg" alt="Moment 5">
+                                </div>
+                                <div class="photo" style="--rotation: 5deg;">
+                                    <img src="assets/images/highlight6.jpg" alt="Moment 6">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <div class="photo-stack">
+                                <div class="photo" style="--rotation: -4deg;">
+                                    <img src="assets/images/highlight7.jpg" alt="Moment 7">
+                                </div>
+                                <div class="photo" style="--rotation: 5deg;">
+                                    <img src="assets/images/highlight8.jpg" alt="Moment 8">
+                                </div>
+                                <div class="photo" style="--rotation: -3deg;">
+                                    <img src="assets/images/highlight9.jpg" alt="Moment 9">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" aria-label="Previous">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <div class="carousel-dots"></div>
+                    <button class="carousel-btn next" aria-label="Next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-label center">Projects</h2>
+            <p class="section-subtitle">Things I've built</p>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ios">iOS</button>
+                <button class="filter-btn" data-filter="ai">AI / Python</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- iOS Project Example -->
+                <div class="project-card" data-category="ios">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>iOS App Name</h3>
+                        <p>Brief description of what the app does and its purpose.</p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>Core Data</span>
+                        </div>
+                        <button class="project-link" data-project="project1">
+                            <span>View Details</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AI Project Example -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI/ML Project Name</h3>
+                        <p>Brief description of the AI project and what problem it solves.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>FastAPI</span>
+                        </div>
+                        <button class="project-link" data-project="project2">
+                            <span>View Details</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Another iOS Project -->
+                <div class="project-card" data-category="ios">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Another iOS App</h3>
+                        <p>Description of this iOS application and its features.</p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>UIKit</span>
+                            <span>Firebase</span>
+                        </div>
+                        <button class="project-link" data-project="project3">
+                            <span>View Details</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Another AI Project -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="assets/images/project4.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Python Backend Project</h3>
+                        <p>Description of this backend/AI project.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <button class="project-link" data-project="project4">
+                            <span>View Details</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="modal-main-image">
+                        <img src="" alt="Project screenshot" id="modal-main-img">
+                    </div>
+                    <div class="modal-thumbnails" id="modal-thumbnails"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-description">Project description goes here.</p>
+                    <div class="modal-tech" id="modal-tech"></div>
+                    <div class="modal-links">
+                        <a href="#" class="btn btn-primary" id="modal-github" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            <span>View Code</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary" id="modal-live" target="_blank">
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-label center">Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="12" x="2" y="6" rx="1"/><rect width="7" height="12" x="15" y="6" rx="1"/><path d="M9 6v12"/></svg>
+                    </div>
+                    <h3>Mobile</h3>
+                    <ul class="skill-list">
+                        <li>Swift</li>
+                        <li>SwiftUI</li>
+                        <li>UIKit</li>
+                        <li>Core Data</li>
+                        <li>Xcode</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4Z"/><circle cx="12" cy="14" r="2"/></svg>
+                    </div>
+                    <h3>AI / ML</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>OpenAI API</li>
+                        <li>scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>FastAPI</li>
+                        <li>Flask</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg>
+                    </div>
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Figma</li>
+                        <li>TestFlight</li>
+                        <li>Docker</li>
+                        <li>Agile</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-label">Contact</h2>
+                <h3 class="contact-headline">Let's work together.</h3>
+                <p class="contact-text">
+                    I'm currently looking for new opportunities. Whether you have a
+                    question or just want to say hi, feel free to reach out!
+                </p>
+                <a href="mailto:your.email@example.com" class="btn btn-primary btn-large">
+                    <span>Say Hello</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Designed & Built by Adrian Faz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
