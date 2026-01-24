@@ -36,7 +36,8 @@ const projectsData = {
         images: [
             "assets/images/screenshots/intelia/intelia1.jpeg",
             "assets/images/screenshots/intelia/intelia2.jpeg",
-            "assets/images/screenshots/intelia/intelia3.jpeg"
+            "assets/images/screenshots/intelia/intelia3.jpeg",
+            { type: "youtube", id: "g_hdnVCyGVs" },
         ],
         github: "",
         live: ""
@@ -62,7 +63,8 @@ const projectsData = {
         images: [
             "assets/images/screenshots/studentparticipation/students1.gif",
             "assets/images/screenshots/studentparticipation/students2.jpeg",
-            "assets/images/screenshots/studentparticipation/students4.jpeg"
+            "assets/images/screenshots/studentparticipation/students4.jpeg",
+            { type: "youtube", id: "Kapee6-aIT4" }
         ],
         github: "",
         live: ""
@@ -76,7 +78,8 @@ const projectsData = {
             "assets/images/screenshots/studentdropout/studentdroput_icon.png"
         ],
         github: "",
-        live: ""
+        live: "",
+        article: "https://drive.google.com/file/d/1UzfQMHFQO1eJmtOS3jd5FDZ5p4xdp7Lu/view"
     },
     "itmeans": {
         title: "itMeans — Real-Life Vocabulary Builder",
@@ -110,7 +113,13 @@ const projectsData = {
         description: `A language-learning app for children aged 5–7 that turns real-world exploration into vocabulary discovery. Using the device camera, children scan objects around them to learn new words while following a story-driven experience. The app uses a custom-trained object recognition model deployed on-device and was refined through testing sessions with children in Italian schools.`,
         technologies: ["SwiftUI", "CoreML", "YOLOv8", "Transfer Learning", "Computer Vision"],
         icon: "assets/images/icons/blinko_icon.png",
-        images: [],
+        images: [
+            "assets/images/screenshots/blinko/Blinko1.PNG",
+            "assets/images/screenshots/blinko/Blinko2.PNG",
+            "assets/images/screenshots/blinko/Blinko3.PNG",
+            "assets/images/screenshots/blinko/Blinko4.PNG",
+            "assets/images/screenshots/blinko/Blinko5.PNG"
+        ],
         github: "",
         live: "",
         appStore: "https://apps.apple.com/us/app/blinko-find-learn-remember/id6745825407"
@@ -124,7 +133,8 @@ const projectsData = {
             "assets/images/screenshots/chickenairport/chicken1.jpeg",
             "assets/images/screenshots/chickenairport/chicken2.jpeg",
             "assets/images/screenshots/chickenairport/chicken3.jpeg",
-            "assets/images/screenshots/chickenairport/chicken4.jpeg"
+            "assets/images/screenshots/chickenairport/chicken4.jpeg",
+            { type: "youtube", id: "rTCyQm_u5Cw" }
         ],
         github: "",
         live: ""
@@ -134,7 +144,9 @@ const projectsData = {
         description: `An educational iOS app where users restore a broken museum guided by a friendly ghost. Progress is achieved by learning about countries, flags, and capitals through interactive galleries. The project combines storytelling and education and was selected as a winner of the Swift Student Challenge 2024.`,
         technologies: ["SwiftUI", "Swift", "State Management", "Educational UX", "iOS"],
         icon: "assets/images/icons/lostmuseum_icon.jpg",
-        images: [],
+        images: [
+            { type: "youtube", id: "xfZ0n6wjn8M" }
+        ],
         github: "",
         live: ""
     },
@@ -144,7 +156,7 @@ const projectsData = {
         technologies: ["Swift", "Speech-to-Text", "OpenAI API", "NLP", "iOS"],
         icon: "assets/images/icons/heyplan_icon.png",
         images: [
-            { type: "youtube", id: "6eM3dZXvP34" }
+            { type: "youtube", id: "zUJILh3eaCA" }
         ],
         github: "",
         live: ""
@@ -154,7 +166,11 @@ const projectsData = {
         description: `A spatial computing application for visionOS that lets users interact with chemical elements in an immersive 3D environment and combine them to create gemstones. The project explores spatial interaction paradigms, gesture-based input, and immersive educational experiences on Apple Vision Pro.`,
         technologies: ["visionOS", "Spatial Computing", "Gesture-Based Interaction", "3D UI Design", "Apple Vision Frameworks"],
         icon: "assets/images/icons/gemify_icon.jpg",
-        images: [],
+        images: [
+            "assets/images/screenshots/gemify/gemify1.jpg",
+            "assets/images/screenshots/gemify/gemify2.jpg",
+            "assets/images/screenshots/gemify/gemify3.jpg"
+        ],
         github: "",
         live: "",
         appStore: "https://apps.apple.com/us/app/gemify-craft-your-own-gems/id6753974353"
@@ -439,6 +455,14 @@ function openModal(project) {
         appStoreLink.style.display = 'inline-flex';
     } else {
         appStoreLink.style.display = 'none';
+    }
+
+    const articleLink = document.getElementById('modal-article');
+    if (project.article) {
+        articleLink.href = project.article;
+        articleLink.style.display = 'inline-flex';
+    } else {
+        articleLink.style.display = 'none';
     }
 
     modal.classList.add('active');
