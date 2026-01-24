@@ -1,51 +1,163 @@
 // ===== Project Data =====
 const projectsData = {
-    project1: {
-        title: "iOS App Name",
-        description: `Describe your iOS app here. Talk about what problem it solves, who it's for, and what makes it special.
-
-Include details about the challenges you faced and how you overcame them. Recruiters love seeing your problem-solving process.`,
-        technologies: ["Swift", "SwiftUI", "Core Data", "CloudKit"],
+    "vaccination-sim": {
+        title: "Drive-Thru Vaccination Centre Simulation",
+        description: `A multi-agent simulation of a COVID-19 drive-thru vaccination center focused on improving traffic distribution and reducing waiting times. The system models cars, vaccination modules, and a supervisor agent that dynamically assigns vehicles to the most efficient routes. The simulation runs in Python and is visualized in real time using Unity.`,
+        technologies: ["Python", "Mesa", "Unity", "Client-Server Architecture", "Systems Modeling"],
+        icon: "assets/images/icons/vaccinationsystem_icon.jpg",
         images: [
-            "assets/images/project1.jpg",
-            "assets/images/project1-2.jpg",
-            "assets/images/project1-3.jpg"
+            "assets/images/screenshots/vaccination/vacc1.gif",
+            "assets/images/screenshots/vaccination/vacc1.jpeg",
+            "assets/images/screenshots/vaccination/vacc2.jpeg",
+            "assets/images/screenshots/vaccination/vacc3.jpeg"
         ],
-        github: "https://github.com/yourusername/project1",
-        live: "https://apps.apple.com/app/yourapp"
-    },
-    project2: {
-        title: "AI/ML Project Name",
-        description: `Describe your AI/ML project here. Explain what it does, what datasets you used, and what results you achieved.
-
-Mention any interesting techniques or algorithms you implemented.`,
-        technologies: ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
-        images: [
-            "assets/images/project2.jpg",
-            "assets/images/project2-2.jpg"
-        ],
-        github: "https://github.com/yourusername/project2",
+        github: "",
         live: ""
     },
-    project3: {
-        title: "Another iOS App",
-        description: `Description for your third project. Make sure to highlight the unique aspects and your contributions.`,
-        technologies: ["Swift", "UIKit", "Firebase", "MapKit"],
+    "ensena": {
+        title: "EnSeña — Mexican Sign Language App",
+        description: `An iOS application designed to make learning Mexican Sign Language more accessible through structured videos, images, and interactive quizzes. The app includes a backend system to store user progress and was fully designed, developed, and published to the App Store under the university's developer account.`,
+        technologies: ["SwiftUI", "Flask", "MongoDB", "REST APIs", "Figma"],
+        icon: "assets/images/icons/ensena_icon.png",
         images: [
-            "assets/images/project3.jpg"
+            "assets/images/screenshots/ensena/lsm1.jpeg",
+            "assets/images/screenshots/ensena/lsm2.jpeg",
+            "assets/images/screenshots/ensena/lsm3.jpeg"
         ],
-        github: "https://github.com/yourusername/project3",
+        github: "",
+        live: "",
+        appStore: "https://apps.apple.com/us/app/itc-mty-ense%C3%B1a/id6467686248"
+    },
+    "intelia": {
+        title: "Intelia — Educational iPad App",
+        description: `An educational iPad app that helps children learn Spanish and basic mathematics through augmented reality, handwriting exercises, and speech-based interaction. The app was designed with accessibility in mind and won first place in the Software Development category at the Engineering Expo.`,
+        technologies: ["SwiftUI", "ARKit", "PencilKit", "Speech Framework", "Accessibility APIs"],
+        icon: "assets/images/icons/intelia_icon.jpg",
+        images: [
+            "assets/images/screenshots/intelia/intelia1.jpeg",
+            "assets/images/screenshots/intelia/intelia2.jpeg",
+            "assets/images/screenshots/intelia/intelia3.jpeg"
+        ],
+        github: "",
         live: ""
     },
-    project4: {
-        title: "Python Backend Project",
-        description: `Description for your Python backend project. Explain the architecture, API design, and any AI integrations.`,
-        technologies: ["Python", "OpenAI API", "PostgreSQL", "Docker"],
+    "smart-speak": {
+        title: "Smart Speak — AI English Assessment Platform",
+        description: `A web-based platform designed to automate English proficiency assessments for hiring processes. Candidates interact with an AI through real-time conversations, while the system analyzes grammar, vocabulary, and coherence to generate detailed feedback and scores. The platform also provides an admin dashboard for reviewing recordings and evaluation results.`,
+        technologies: ["Remix (React)", "Python (Flask)", "OpenAI API", "PostgreSQL", "MongoDB"],
+        icon: "assets/images/icons/smartspeak_icon.jpg",
         images: [
-            "assets/images/project4.jpg"
+            "assets/images/screenshots/smartspeak/smartspeak1.jpeg",
+            "assets/images/screenshots/smartspeak/smartspeak2.jpeg",
+            "assets/images/screenshots/smartspeak/smartspeak3.jpeg"
         ],
-        github: "https://github.com/yourusername/project4",
+        github: "",
         live: ""
+    },
+    "class-insight": {
+        title: "Class Insight — AI Classroom Analytics",
+        description: `An AI-powered system that automatically tracks student attendance and participation in classrooms using computer vision. Facial recognition is used to register attendance, while pose estimation detects hand-raising for participation. The system includes a web dashboard where teachers can review statistics and insights about class engagement.`,
+        technologies: ["Python", "Computer Vision", "YOLO", "MediaPipe", "Next.js"],
+        icon: "assets/images/icons/studentparticipation_icon.png",
+        images: [
+            "assets/images/screenshots/studentparticipation/students1.gif",
+            "assets/images/screenshots/studentparticipation/students2.jpeg",
+            "assets/images/screenshots/studentparticipation/students4.jpeg"
+        ],
+        github: "",
+        live: ""
+    },
+    "dropout-prediction": {
+        title: "Student Dropout Risk Prediction",
+        description: `A data science project focused on predicting student dropout risk using supervised machine learning models. The work involved data preprocessing, feature selection, training multiple models, and comparing their performance using standard evaluation metrics to identify the most effective approach.`,
+        technologies: ["Python", "Pandas", "scikit-learn", "NumPy", "Machine Learning"],
+        icon: "assets/images/icons/studentdroput_icon.png",
+        images: [
+            "assets/images/screenshots/studentdropout/studentdroput_icon.png"
+        ],
+        github: "",
+        live: ""
+    },
+    "itmeans": {
+        title: "itMeans — Real-Life Vocabulary Builder",
+        description: `An iOS app designed to help language learners build vocabulary from real-life experiences. Users can quickly save words or phrases as they encounter them, add meanings later, and review them naturally through a daily Home Screen widget. The app focuses on low-friction input, offline-first usage, and long-term retention through repetition.`,
+        technologies: ["SwiftUI", "SwiftData", "WidgetKit", "AppStorage", "iOS"],
+        icon: "assets/images/icons/itmeans_icon.png",
+        images: [
+            "assets/images/screenshots/itmeans/itmeans1.png",
+            "assets/images/screenshots/itmeans/itmeans2.png",
+            "assets/images/screenshots/itmeans/itmeans3.png"
+        ],
+        github: "",
+        live: "",
+        appStore: "https://apps.apple.com/us/app/itmeans/id6740202316"
+    },
+    "pinch-it": {
+        title: "Pinch It! — Touchless Hand Therapy App",
+        description: `An iOS app that transforms a traditional finger-pinching therapy exercise into a playful, touchless experience for children with dysgraphia. Using the device camera, the app detects hand and finger movements in real time. The experience was refined through multiple user-testing sessions with children and iterated based on observed behavior.`,
+        technologies: ["SwiftUI", "Vision Framework", "Hand & Finger Tracking", "Camera-Based Interaction", "Accessibility Design"],
+        icon: "assets/images/icons/pinchit_icon.png",
+        images: [
+            "assets/images/screenshots/pinchit/pinchit1.jpeg",
+            "assets/images/screenshots/pinchit/pinchit2.jpeg"
+        ],
+        github: "",
+        live: "",
+        appStore: "https://apps.apple.com/us/app/pinch-it/id6742778952"
+    },
+    "blinko": {
+        title: "Blinko — Find, Learn, Remember",
+        description: `A language-learning app for children aged 5–7 that turns real-world exploration into vocabulary discovery. Using the device camera, children scan objects around them to learn new words while following a story-driven experience. The app uses a custom-trained object recognition model deployed on-device and was refined through testing sessions with children in Italian schools.`,
+        technologies: ["SwiftUI", "CoreML", "YOLOv8", "Transfer Learning", "Computer Vision"],
+        icon: "assets/images/icons/blinko_icon.png",
+        images: [],
+        github: "",
+        live: "",
+        appStore: "https://apps.apple.com/us/app/blinko-find-learn-remember/id6745825407"
+    },
+    "chicken-airport": {
+        title: "The International Chicken Airport",
+        description: `An interactive storytelling app designed to make Natural Language Processing concepts more approachable. Set in a chaotic chicken airport, users complete playful missions that simulate tokenization, lemmatization, parts of speech, and sentiment analysis, helping them understand how language-processing systems work behind the scenes.`,
+        technologies: ["SwiftUI", "Natural Language Framework", "NLP Fundamentals", "Educational Game Design", "iOS"],
+        icon: "assets/images/icons/chickenairport_icon.png",
+        images: [
+            "assets/images/screenshots/chickenairport/chicken1.jpeg",
+            "assets/images/screenshots/chickenairport/chicken2.jpeg",
+            "assets/images/screenshots/chickenairport/chicken3.jpeg",
+            "assets/images/screenshots/chickenairport/chicken4.jpeg"
+        ],
+        github: "",
+        live: ""
+    },
+    "lost-museum": {
+        title: "The Lost Museum",
+        description: `An educational iOS app where users restore a broken museum guided by a friendly ghost. Progress is achieved by learning about countries, flags, and capitals through interactive galleries. The project combines storytelling and education and was selected as a winner of the Swift Student Challenge 2024.`,
+        technologies: ["SwiftUI", "Swift", "State Management", "Educational UX", "iOS"],
+        icon: "assets/images/icons/lostmuseum_icon.jpg",
+        images: [],
+        github: "",
+        live: ""
+    },
+    "heyplan": {
+        title: "HeyPlan — Voice-Based Finance Assistant",
+        description: `A first-place Datathon project that allows users to register cash transactions using voice input. The app converts speech into structured financial records, automatically categorizes transactions, and provides personalized recommendations and retirement planning features using AI-based natural language understanding.`,
+        technologies: ["Swift", "Speech-to-Text", "OpenAI API", "NLP", "iOS"],
+        icon: "assets/images/icons/heyplan_icon.png",
+        images: [
+            { type: "youtube", id: "6eM3dZXvP34" }
+        ],
+        github: "",
+        live: ""
+    },
+    "gemify": {
+        title: "Gemify — Spatial Computing Science App",
+        description: `A spatial computing application for visionOS that lets users interact with chemical elements in an immersive 3D environment and combine them to create gemstones. The project explores spatial interaction paradigms, gesture-based input, and immersive educational experiences on Apple Vision Pro.`,
+        technologies: ["visionOS", "Spatial Computing", "Gesture-Based Interaction", "3D UI Design", "Apple Vision Frameworks"],
+        icon: "assets/images/icons/gemify_icon.jpg",
+        images: [],
+        github: "",
+        live: "",
+        appStore: "https://apps.apple.com/us/app/gemify-craft-your-own-gems/id6753974353"
     }
 };
 
@@ -54,8 +166,6 @@ const navbar = document.querySelector('.navbar');
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
 const modal = document.getElementById('project-modal');
 const modalClose = document.querySelector('.modal-close');
 const sections = document.querySelectorAll('.section');
@@ -204,28 +314,71 @@ function handleSwipe() {
 }
 
 // ===== Project Filters =====
-filterBtns.forEach(btn => {
+const categoryFilters = document.querySelectorAll('#category-filters .filter-btn');
+const stackFilters = document.querySelectorAll('#stack-filters .filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+const noResults = document.getElementById('no-results');
+
+let activeCategory = 'all';
+let activeStack = 'all';
+
+function filterProjects() {
+    let visibleCount = 0;
+
+    projectCards.forEach((card, index) => {
+        const cardCategory = card.dataset.category;
+        const cardStack = card.dataset.stack || '';
+
+        const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+        const matchesStack = activeStack === 'all' || cardStack.includes(activeStack);
+
+        if (matchesCategory && matchesStack) {
+            card.classList.remove('hidden');
+            card.style.animationDelay = `${visibleCount * 0.05}s`;
+            visibleCount++;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+
+    // Show/hide no results message
+    if (noResults) {
+        if (visibleCount === 0) {
+            noResults.classList.add('visible');
+        } else {
+            noResults.classList.remove('visible');
+        }
+    }
+}
+
+// Category filter click handlers
+categoryFilters.forEach(btn => {
     btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        categoryFilters.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+        activeCategory = btn.dataset.filter;
+        filterProjects();
+    });
+});
 
-        const filter = btn.dataset.filter;
-
-        projectCards.forEach((card, index) => {
-            const category = card.dataset.category;
-
-            if (filter === 'all' || category === filter) {
-                card.classList.remove('hidden');
-                card.style.animation = `fadeInUp 0.5s ease ${index * 0.1}s forwards`;
-            } else {
-                card.classList.add('hidden');
-            }
-        });
+// Stack filter click handlers
+stackFilters.forEach(btn => {
+    btn.addEventListener('click', () => {
+        stackFilters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeStack = btn.dataset.stack;
+        filterProjects();
     });
 });
 
 // ===== Project Modal =====
 const projectLinks = document.querySelectorAll('.project-link');
+const galleryPrev = document.getElementById('gallery-prev');
+const galleryNext = document.getElementById('gallery-next');
+const galleryDotsContainer = document.getElementById('gallery-dots');
+
+let currentGalleryImages = [];
+let currentGalleryIndex = 0;
 
 projectLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -242,26 +395,17 @@ function openModal(project) {
     document.getElementById('modal-title').textContent = project.title;
     document.getElementById('modal-description').textContent = project.description.trim();
 
-    const mainImg = document.getElementById('modal-main-img');
-    mainImg.src = project.images[0];
+    // Use only project images (fallback to icon if no images)
+    currentGalleryImages = project.images && project.images.length > 0
+        ? project.images
+        : [project.icon];
+    currentGalleryIndex = 0;
 
-    const thumbnailsContainer = document.getElementById('modal-thumbnails');
-    thumbnailsContainer.innerHTML = '';
+    // Display first media item
+    displayMediaItem(currentGalleryImages[0]);
 
-    project.images.forEach((img, index) => {
-        const thumb = document.createElement('img');
-        thumb.src = img;
-        thumb.alt = `Screenshot ${index + 1}`;
-        if (index === 0) thumb.classList.add('active');
-
-        thumb.addEventListener('click', () => {
-            mainImg.src = img;
-            thumbnailsContainer.querySelectorAll('img').forEach(t => t.classList.remove('active'));
-            thumb.classList.add('active');
-        });
-
-        thumbnailsContainer.appendChild(thumb);
-    });
+    // Setup gallery navigation
+    setupGalleryNavigation();
 
     const techContainer = document.getElementById('modal-tech');
     techContainer.innerHTML = '';
@@ -289,13 +433,108 @@ function openModal(project) {
         liveLink.style.display = 'none';
     }
 
+    const appStoreLink = document.getElementById('modal-appstore');
+    if (project.appStore) {
+        appStoreLink.href = project.appStore;
+        appStoreLink.style.display = 'inline-flex';
+    } else {
+        appStoreLink.style.display = 'none';
+    }
+
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
+function setupGalleryNavigation() {
+    const dotsContainer = document.getElementById('gallery-dots');
+    dotsContainer.innerHTML = '';
+
+    // Hide navigation if only one image
+    if (currentGalleryImages.length <= 1) {
+        galleryPrev.classList.add('hidden');
+        galleryNext.classList.add('hidden');
+        return;
+    }
+
+    galleryPrev.classList.remove('hidden');
+    galleryNext.classList.remove('hidden');
+
+    // Create dots
+    currentGalleryImages.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('gallery-dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToGalleryImage(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    updateGalleryButtons();
+}
+
+function goToGalleryImage(index) {
+    currentGalleryIndex = index;
+    displayMediaItem(currentGalleryImages[index]);
+    updateGalleryDots();
+    updateGalleryButtons();
+}
+
+function displayMediaItem(item) {
+    const mainImg = document.getElementById('modal-main-img');
+    const videoContainer = document.getElementById('modal-video-container');
+
+    // Check if item is a YouTube video (object with type: "youtube")
+    if (typeof item === 'object' && item.type === 'youtube') {
+        mainImg.classList.add('hidden');
+        videoContainer.classList.add('active');
+        videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${item.id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    } else {
+        // It's an image (string)
+        mainImg.classList.remove('hidden');
+        videoContainer.classList.remove('active');
+        videoContainer.innerHTML = '';
+        mainImg.src = item;
+    }
+}
+
+function updateGalleryDots() {
+    const dots = document.querySelectorAll('.gallery-dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentGalleryIndex);
+    });
+}
+
+function updateGalleryButtons() {
+    // Disable prev on first image, next on last image
+    galleryPrev.disabled = currentGalleryIndex === 0;
+    galleryNext.disabled = currentGalleryIndex === currentGalleryImages.length - 1;
+}
+
+function galleryPrevImage() {
+    if (currentGalleryIndex > 0) {
+        goToGalleryImage(currentGalleryIndex - 1);
+    }
+}
+
+function galleryNextImage() {
+    if (currentGalleryIndex < currentGalleryImages.length - 1) {
+        goToGalleryImage(currentGalleryIndex + 1);
+    }
+}
+
+galleryPrev.addEventListener('click', galleryPrevImage);
+galleryNext.addEventListener('click', galleryNextImage);
+
 function closeModal() {
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    currentGalleryImages = [];
+    currentGalleryIndex = 0;
+
+    // Clear video container to stop playback
+    const videoContainer = document.getElementById('modal-video-container');
+    videoContainer.innerHTML = '';
+    videoContainer.classList.remove('active');
+    document.getElementById('modal-main-img').classList.remove('hidden');
 }
 
 modalClose.addEventListener('click', closeModal);
@@ -309,6 +548,14 @@ modal.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
         closeModal();
+    }
+    // Arrow key navigation for gallery
+    if (modal.classList.contains('active')) {
+        if (e.key === 'ArrowLeft') {
+            galleryPrevImage();
+        } else if (e.key === 'ArrowRight') {
+            galleryNextImage();
+        }
     }
 });
 
