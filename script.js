@@ -111,7 +111,7 @@ const projectsData = {
     "blinko": {
         title: "Blinko — Find, Learn, Remember",
         description: `A language-learning app for children aged 5–7 that turns real-world exploration into vocabulary discovery. Using the device camera, children scan objects around them to learn new words while following a story-driven experience. The app uses a custom-trained object recognition model deployed on-device and was refined through testing sessions with children in Italian schools.`,
-        technologies: ["SwiftUI", "CoreML", "YOLOv8", "Transfer Learning", "Computer Vision"],
+        technologies: ["SwiftUI", "CoreML", "Python", "Transfer Learning", "Computer Vision"],
         icon: "assets/images/icons/blinko_icon.png",
         images: [
             "assets/images/screenshots/blinko/Blinko1.PNG",
@@ -153,7 +153,7 @@ const projectsData = {
     "heyplan": {
         title: "HeyPlan — Voice-Based Finance Assistant",
         description: `A first-place Datathon project that allows users to register cash transactions using voice input. The app converts speech into structured financial records, automatically categorizes transactions, and provides personalized recommendations and retirement planning features using AI-based natural language understanding.`,
-        technologies: ["Swift", "Speech-to-Text", "OpenAI API", "NLP", "iOS"],
+        technologies: ["Swift", "Python", "OpenAI API", "NLP", "iOS"],
         icon: "assets/images/icons/heyplan_icon.png",
         images: [
             { type: "youtube", id: "zUJILh3eaCA" }
@@ -331,24 +331,19 @@ function handleSwipe() {
 
 // ===== Project Filters =====
 const categoryFilters = document.querySelectorAll('#category-filters .filter-btn');
-const stackFilters = document.querySelectorAll('#stack-filters .filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 const noResults = document.getElementById('no-results');
 
 let activeCategory = 'all';
-let activeStack = 'all';
 
 function filterProjects() {
     let visibleCount = 0;
 
     projectCards.forEach((card, index) => {
-        const cardCategory = card.dataset.category;
-        const cardStack = card.dataset.stack || '';
+        const cardCategories = card.dataset.category.split(',');
+        const matchesCategory = activeCategory === 'all' || cardCategories.includes(activeCategory);
 
-        const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
-        const matchesStack = activeStack === 'all' || cardStack.includes(activeStack);
-
-        if (matchesCategory && matchesStack) {
+        if (matchesCategory) {
             card.classList.remove('hidden');
             card.style.animationDelay = `${visibleCount * 0.05}s`;
             visibleCount++;
@@ -373,16 +368,6 @@ categoryFilters.forEach(btn => {
         categoryFilters.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         activeCategory = btn.dataset.filter;
-        filterProjects();
-    });
-});
-
-// Stack filter click handlers
-stackFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-        stackFilters.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        activeStack = btn.dataset.stack;
         filterProjects();
     });
 });
