@@ -1,5 +1,41 @@
 // ===== Project Data =====
 const projectsData = {
+    "rag-llamaindex": {
+        title: "Spanish Lesson RAG — AI Tutor Assistant",
+        description: `A RAG application built with LlamaIndex that lets you chat with your own PDF documents. It indexes lesson transcripts into a ChromaDB vector store, extracts metadata filters from natural language queries, and retrieves only the most relevant chunks before generating an answer. Built with a Streamlit interface that shows source attribution for every response.`,
+        technologies: ["Python", "LlamaIndex", "ChromaDB", "Streamlit", "Llama 3.3 70B", "Qwen3 Embedding", "Regolo AI"],
+        icon: "assets/images/icons/rag_icon.png",
+        images: [
+            "assets/images/screenshots/rag/rag1.png",
+            "assets/images/screenshots/rag/rag2.png"
+        ],
+        github: "https://github.com/fazfaz7/spanish-tutor-rag",
+        live: ""
+    },
+    "conversation-crazy": {
+        title: "ConversationCrazy — AI Dialogue & Grammar Generator",
+        description: `A web tool for Spanish teachers that generates natural dialogues and grammar exercises using a two-step LLM pipeline. The teacher sets the situation, grammar topic, proficiency level, and Spanish dialect — GPT-4o writes the dialogue the way native speakers actually talk, then a second call converts it into a fill-in-the-blank exercise with an answer key.`,
+        technologies: ["Next.js", "TypeScript", "OpenAI GPT-4o", "Prompt Engineering", "Tailwind CSS"],
+        icon: "assets/images/icons/conversationcrazy_icon.png",
+        images: [
+            "assets/images/screenshots/conversationcrazy/cc1.png",
+            "assets/images/screenshots/conversationcrazy/cc2.png"
+        ],
+        github: "https://github.com/fazfaz7/ConversationExerciseGenerator",
+        live: ""
+    },
+    "crucigramas": {
+        title: "Crucigramas — AI Crossword Generator",
+        description: `A web tool for Spanish teachers that generates ready-to-print crossword puzzles from a vocabulary list. GPT-4o-mini writes the clues in Spanish, the layout is built algorithmically, and the result exports as a printable PDF.`,
+        technologies: ["Next.js", "TypeScript", "OpenAI GPT-4o-mini", "PDF Export", "Tailwind CSS"],
+        icon: "assets/images/icons/crucigramas_icon.png",
+        images: [
+            "assets/images/screenshots/crucigramas/cruci1.png",
+            "assets/images/screenshots/crucigramas/cruci2.png"
+        ],
+        github: "https://github.com/fazfaz7/LingoCross",
+        live: ""
+    },
     "vaccination-sim": {
         title: "Drive-Thru Vaccination Centre Simulation",
         description: `A multi-agent simulation of a COVID-19 drive-thru vaccination center focused on improving traffic distribution and reducing waiting times. The system models cars, vaccination modules, and a supervisor agent that dynamically assigns vehicles to the most efficient routes. The simulation runs in Python and is visualized in real time using Unity.`,
